@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSA-DS Labyrinth Illustration</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        #maze {
+            display: grid;
+            grid-template-columns: repeat(10, 40px);
+            gap: 2px;
+        }
+        .cell {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+        }
+        .wall {
+            background-color: #333;
+        }
+        .path {
+            background-color: #eee;
+        }
+        .start {
+            background-color: green;
+            color: white;
+        }
+        .goal {
+            background-color: red;
+            color: white;
+        }
+        .visited {
+            background-color: #9bbad1; /* Biru untuk menunjukkan telah dieksplorasi */
+        }
+        .candidate {
+     background-color: #ffea00; /* Kuning untuk menunjukkan kandidat */
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Labyrinth Search with BSA-DS Algorithm</h1>
+    <div id="maze"></div>
+    <div id="info"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
